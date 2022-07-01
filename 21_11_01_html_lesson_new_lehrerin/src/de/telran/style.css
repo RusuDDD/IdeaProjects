@@ -1,0 +1,73 @@
+h1 {
+    color: red;
+}
+
+.box {
+    height: 200px;
+    width: 300px;
+    padding-inline: 50px;
+    margin: 40px auto;
+    border: 5px solid magenta;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.second-box {
+    width: 50%;
+}
+
+.item {
+    font-size: 1.5rem;
+    background-color: aquamarine;
+    color: blue;
+
+}
+
+.item2 {
+    width: 75%;
+    background-color: coral;
+    margin-left: 20px;
+}
+
+.item3 {
+    width: 50%;
+    background-color: red;
+    padding: 10px;
+}
+
+ul.nav li {
+    float: left;
+    padding-right: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.products {
+    width: 900px;
+    box-sizing: border-box;
+    margin: 20px auto;
+
+}
+
+.card {
+    border: 1px solid black;
+    padding: 15px;
+    width: calc(100% / 3 - 30px);
+    float: left;
+    margin: 0px 15px;
+    box-sizing: border-box;
+}
+.last{
+    width: 100px;
+    background-color: aquamarine;
+    height: 50px;
+    margin-bottom: 50px;
+
+}
+.clear{
+    clear: both;
+}

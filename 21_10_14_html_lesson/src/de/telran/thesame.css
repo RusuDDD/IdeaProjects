@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+    text-align: center;
+    
+}
+section{
+    background-color: #194A84;
+    padding: 150px;
+    padding-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border: 3px solid white;
+}
+img{
+
+    width: 75%;
+    border-radius: 50%;
+    border: 2px gold solid;
+    padding: 1px;
+    margin: auto;
+
+}
+.first{
+    text-align: center;
+}
+.paragraf{
+    font-size: 25px;
+    text-transform: inherit;
+    font-family: Candara;
+    color: white;
+    border: white solid 2px;
+    padding: 25px;
+}
+
+
+}
+div{
+    width: 150px;
+    padding-top: 1px ;
+}
+header{
+    width: 75%;
+}
