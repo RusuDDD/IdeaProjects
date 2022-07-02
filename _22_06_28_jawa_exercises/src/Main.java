@@ -28,16 +28,17 @@ public class Main {
     public static LinkedList removeIdenticalChars(LinkedList<String> array) { //длина входящего Листа = 9;
 
         for (int i = 0; i < array.size() - 1; i++) {
-            if (array.get(i).equals(array.get(i + 1))) {
+            if (array.get(i).equals(array.get(i + 1))) {//{a,b,c,b,a,f}->{{a,,b,c,a,f}}
                 array.remove(i);
                 i--;
             }
         }
-        LinkedList<String> temp = new LinkedList<>();
-        for (int i = 2; i < array.size()-2; i++) {
-            temp.add(array.get(i));
-        }
-        return temp;
+        for (int i = 0; i < array.size() - 2; i++) {
+            if (array.get(i).equals(array.get(i + 2))) {
+                array.remove(i+2);
+                i--;
+            }
+        }return array;
     }
 //    List<Character> temp = Arrays.asList(new Character[array.size() + 4]); // длина нового пустого списка = 11;
 //        for (int i = 0; i < array.size(); i++) {
