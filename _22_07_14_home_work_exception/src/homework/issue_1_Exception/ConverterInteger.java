@@ -2,11 +2,14 @@ package homework.issue_1_Exception;
 
 import java.util.ArrayList;
 import java.util.List;
+
 public class ConverterInteger {
     private List<String> stringList;
+
     public ConverterInteger(List<String> stringList) {
         this.stringList = stringList;
     }
+
     public List<String> getStringList() {
         return stringList;
     }
@@ -18,20 +21,19 @@ public class ConverterInteger {
                 '}';
     }
 
-    public  List<Integer> convertTheStringToTheInteger(List<String> strings) {
+    public void convertTheStringToTheInteger(List<String> strings) {
 
         List<Integer> integers = new ArrayList<>();
-
         List<Object> objectsErrors = new ArrayList<>();
-        for (String o : strings) {
+
+        for (int i = 0; i < strings.size(); i++) {
             try {
-                integers.add(Integer.parseInt(o));
+                integers.add(Integer.parseInt(strings.get(i)));
             } catch (Exception e) {
-                objectsErrors.add(o);
+                System.out.println("Element " + strings.get(i) + " index " + i);
             }
         }
-        System.out.println(objectsErrors);
-
-        return integers;
+        System.out.println(integers);
     }
 }
+

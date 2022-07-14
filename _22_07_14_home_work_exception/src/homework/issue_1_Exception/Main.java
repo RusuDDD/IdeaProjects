@@ -13,16 +13,16 @@ public class Main {
 //Подсказка: необходимо использовать метод Integer.parseInt и обрабатывать его эксэпшены.
 
         List<String> stringsInt = new ArrayList<>();
-        stringsInt.add("23113555sdg");
-        stringsInt.add("45554561asdg");
-        stringsInt.add("8945545");
-        stringsInt.add("7822456");
-        stringsInt.add("2557555");
-        //System.out.println(stringsInt);
+        stringsInt.add("555sdg");
+        stringsInt.add("561asdg");
+        stringsInt.add("545");
+        stringsInt.add("456");
+        stringsInt.add("555");
+
 
         ConverterInteger name = new ConverterInteger(stringsInt);
         name.convertTheStringToTheInteger(stringsInt);
-        System.out.println(name);
+
 
     }
 }
