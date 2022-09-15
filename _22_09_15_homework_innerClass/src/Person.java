@@ -32,6 +32,7 @@ public class Person {
                 ", birthYear=" + birthYear +
                 '}';
     }
+
     private boolean validityDate() {
         LocalDate date = LocalDate.of(2022, 12, 31);
         return date.getYear() - birthYear <= 10;
@@ -48,7 +49,7 @@ public class Person {
 
         @Override
         public String toString() {
-            return Person.this.name + " " + Person.this.surName + ", passnum "+  passNum + ", country=" + country;
+            return Person.this.name + " " + Person.this.surName + ", passnum " + passNum + ", country=" + country;
         }
 
         public boolean validityCheck() {
