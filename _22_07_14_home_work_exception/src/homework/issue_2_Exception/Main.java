@@ -8,6 +8,7 @@ public class Main {
         int[][] arrayElement = new int[10][10];
         int[][] arrayElement1 = null;
         int[][] arrayElement2 = new int[10][20];
+        
         checkForException(arrayElement);
         checkForException(arrayElement1);
         checkForException(arrayElement2);

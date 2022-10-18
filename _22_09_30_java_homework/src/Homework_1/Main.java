@@ -16,13 +16,11 @@ public class Main {
     public static void main(String[] args) {
 
         List<String> list = List.of("a:11", "b:22", "a:13", "c:20", "a:10");
-
         System.out.println(issue_1((list)));
     }
     public static Map<String, List<Integer>> issue_1(List<String> list) {
         return list.stream()
-                .collect(Collectors.groupingBy(s -> s.split(":")[0],
-                        Collectors.mapping(s -> Integer.parseInt(s.split(":")[1]),
+                .collect(Collectors.groupingBy(s -> s.split(":")[0], Collectors.mapping(s -> Integer.parseInt(s.split(":")[1]),
                                 Collectors.toList())));
     }
 }

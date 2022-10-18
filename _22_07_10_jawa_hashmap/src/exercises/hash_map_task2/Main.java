@@ -29,10 +29,10 @@ public class Main {
         if (list != null && !list.isEmpty()) {
             for (Book book : list) {
                 List<String> value = result.get(book.getAuthor());
-                if (value == null) {
+                if (value == null)
                     value = new ArrayList<>();
-                }
-                value.add(book.getTitle());
+
+                //value.add(book.getTitle());
                 result.put(book.getAuthor(), value);
             }
         }
@@ -44,8 +44,9 @@ public class Main {
 //                resValue += map.get(key);
 //            }
 //            map.put(resKey, resValue);
-
+            return null;
         }
+
     }
 
 class Book {

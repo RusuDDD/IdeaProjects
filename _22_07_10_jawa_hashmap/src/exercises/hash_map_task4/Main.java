@@ -11,9 +11,9 @@ public class Main {
 списке присутствует соответствующее количество одинаковых записей. Необходимо сформировать Map<Book, Integer>, где ключ
 это книга, значение, сколько раз она встречается в списке, т.е. сколько пришло экземпляров. */
 
-    Book book1 = new Book("M. Lermontov", "A Hero of Our Time");
-    Book book2 = new Book("M. Lermontov", "Demon");
-    Book book3 = new Book("M. Lermontov", "Angel of Death");
+    Book book1 = new Book("A. Mamantov", "A Hero of Our Time");
+    Book book2 = new Book("V. Trotscki", "Demons");
+    Book book3 = new Book("B. Garilov", "Angel of Death");
 
     List<Book> bookList = new ArrayList<>();
         bookList.add(book1);

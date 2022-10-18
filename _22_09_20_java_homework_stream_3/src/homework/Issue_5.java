@@ -47,6 +47,8 @@ public class Issue_5 {
         facultyList.add(f2);
         System.out.println(allStudentsOnFaculty(facultyList));
 
+
+
     }
 
     public static Map<String, List<Student>> allStudentsOnFaculty(List<Faculty> facultyList) {
